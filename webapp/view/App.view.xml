@@ -1,0 +1,16 @@
+<mvc:View controllerName="vp.UploadImages.controller.App" xmlns:unf="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<unf:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="" width="400px" tooltip="Upload your file"
+							uploadComplete="handleUploadComplete"/>
+						<Button text="Upload File" press="handleUploadPress"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
